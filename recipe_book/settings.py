@@ -29,7 +29,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['recipe-block.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['app-recipe.herokuapp.com', 'localhost']
 
 
 # Application definition
@@ -45,6 +45,8 @@ INSTALLED_APPS = [
     'cloudinary',
     'recipe',
 ]
+
+SITE_ID = 1
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
